@@ -4,7 +4,8 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 
 ## What This Is
 
-Personal learning environment for enterprise technologies:
+**Personal learning environment for enterprise technologies:**
+
     • High availability and redundancy patterns 
     • Network segmentation and security 
     • Container orchestration and virtualization 
