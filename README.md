@@ -178,6 +178,7 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 ## Learning Focus
 
 Hands-on experience with:
+
     • Multi-site infrastructure design 
     • Network security and segmentation 
     • Linux/Windows systems administration 
@@ -206,6 +207,7 @@ Hands-on experience with:
 ## Documentation
 
 Infrastructure docs maintained in local Bookstack:
+
     • Network diagrams 
     • Service dependencies 
     • Runbooks 
@@ -213,4 +215,5 @@ Infrastructure docs maintained in local Bookstack:
     • Configuration templates 
     
 ## Note
+
 Personal learning environment. Security practices shown here are for educational purposes - evaluate against organizational policies before production use. In other words: don't do what I do just because you found it on the internet.
