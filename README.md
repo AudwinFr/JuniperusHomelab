@@ -19,7 +19,7 @@ Personal learning environment for enterprise technologies:
 
     • Connectivety: 1Gbps/1Gbps fiber
     • Gateway: UniFi Dream Machine Pro 
-    • Switching: UDM Pro, USW-Pro-Max-16-POE, USW-8-Lite-POE, USW-Ultra, Flex Mini
+    • Switching: USW-Pro-Max-16-POE, USW-8-Lite-POE, USW-Ultra, Flex Mini
     • Wireless: UniFi U7 Pro
     • Tarkin
     • Thrawn
