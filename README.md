@@ -1,7 +1,7 @@
-<h1>**Juniperus Homelab**</h1>
+# Juniperus Homelab
 Multi-site infrastructure lab for learning virtualization, networking, automation, and systems administration. Named after the Latin term for my childhood street where I grew up and still live with my family today.
 
-**What This Is**
+## What This Is
 Personal learning environment for enterprise technologies:
     • High availability and redundancy patterns 
     • Network segmentation and security 
@@ -9,9 +9,10 @@ Personal learning environment for enterprise technologies:
     • Distributed systems and monitoring 
     • Infrastructure documentation 
 
-**Infrastructure**
-***Network***
-Primary Site: Juniperus
+## Infrastructure
+
+### Network
+**Primary Site: Juniperus**
     • Connectivety: 1Gbps/1Gbps fiber
     • Gateway: UniFi Dream Machine Pro 
     • Switching: UDM Pro, USW-Pro-Max-16-POE, USW-8-Lite-POE, USW-Ultra, Flex Mini
@@ -19,13 +20,14 @@ Primary Site: Juniperus
     • Tarkin
     • Thrawn
     • Piett
-Remote Site: Lothal
+**Remote Site: Lothal**
     • Connectivety: 100Mbps/100Mbps fiber
     • Gateway: UniFi Cloud Gateway Ultra 
     • Wireless: UniFi U6 Lite 
     • Ozzel
     
-***VLAN Design***
+### VLAN Design
+
 | VLAN | Purpose | Description |
 |------|---------|-------------|
 | Management | Infrastructure | Switches, APs, hypervisors |
@@ -34,8 +36,10 @@ Remote Site: Lothal
 | IoT | Smart Home | Isolated IoT devices, TVs |
 | Security | Cameras | Security systems |
 | Guest | Visitors | Internet-only access |
-***Compute***
-Primary Hypervisor: Tarkin
+
+### Compute
+
+**Primary Hypervisor: Tarkin**
     • Hardware: Supermicro 5018D-MTF 
     • CPU: Intel Xeon E3-1240v3 
     • RAM: 32GB ECC 
@@ -51,7 +55,7 @@ Running services:
     • Audiobookshelf LXC (media) 
     • NAS Server LXC (file sharing) 
     • Pi-hole LXC (DNS filtering) 
-Remote Hypervisor: Ozzel
+**Remote Hypervisor: Ozzel**
     • Hardware: HP EliteDesk 705 G3 
     • CPU: AMD A10-9700E 
     • RAM: 16GB 
@@ -61,9 +65,9 @@ Running services:
     • Home Assistant VM (site redundancy) 
     • Docker VM (distributed services) 
 
-**Backup Infrastructure**
-Backup Server: Thrawn
+### Backup Infrastructure
 
+**Backup Server: Thrawn**
     • Hardware: Custom 1U server
     • CPU: AMD A8-7200p
     • RAM: 8GB
@@ -71,75 +75,82 @@ Backup Server: Thrawn
     • Platform: Proxmox Backup Server
     • Backup strategy: Automated ZFS snapshots + PBS incremental backups
       
-Management Server: Piett
-
+**Management Server: Piett**
     • Hardware: Supermicro 1U
     • CPU: Intel Atom D510
     • RAM: 4GB
     • Platform: Proxmox Datacenter Manager
     • Centralized cluster management for Tarkin, Thrawn, and Ozzel.
 
-Secondary Backup
-
+**Secondary Backup**
     • Raspberry Pi 4 with OpenMediaVault
 
-Monitoring
-
+**Monitoring**
     • Prometheus on Raspberry Pi 3B+ 
     • Grafana dashboards 
     • Pi-hole DNS statistics 
 
-***Smart Home***
-Protocols
+### Smart Home
+
+**Protocols**
     • Zigbee: SLZB-06 coordinator (PoE) 
     • Matter/Bluetooth: SLZB-06M bridge (PoE) 
     • Z-Wave: Rock Pi S with USB adapter and PoE hat 
-Platform
+    
+**Platform**
     • Home Assistant dual-site deployment 
     • 50+ integrated devices 
     • Custom automations for temperature monitoring, equipment protection, presence detection 
 
-***Security***
-Zero Trust Implementation
+### Security
+**Zero Trust Implementation**
     • Cloudflare Zero Trust for desktop HA access 
     • mTLS authentication for mobile HA access 
     • VLAN isolation with zone-based firewall rules 
     • Pi-hole for DNS-level blocking 
-Access Control
+    
+**Access Control**
     • Self-hosted CA for internal services 
     • Cloudflare Access for authentication 
     • Service isolation via LXC containers 
-Development Hardware
+    
+**Development Hardware**
     • Orange Pi Zero3 for Docker experiments 
     • Multiple Raspberry Pi systems for distributed testing 
 
-***Tech Stack***
-Virtualization
+## Tech Stack
+
+**Virtualization**
     • Proxmox VE 
     • LXC Containers 
     • Docker & Docker Compose 
-Networking
+    
+**Networking**
     • UniFi Network Stack
     • VLANs with inter-vlan traffic blocked. Holes punched on a case by case need.
        
-Storage
+**Storage**
     • ZFS (RAIDZ1, snapshots, compression) 
     • Proxmox Backup Server 
     • OpenMediaVault 
-Scripting
+    
+**Scripting**
     • PowerShell (Windows automation) 
     • Bash (Linux management) 
     • Home Assistant YAML 
-Monitoring
+    
+**Monitoring**
     • Prometheus 
     • Grafana 
     • Pi-hole 
-Security
+    
+**Security**
     • Cloudflare Zero Trust 
     • mTLS certificates 
     • Self-hosted CA 
 
-***Learning Focus***
+## Learning Focus
+
 Hands-on experience with:
     • Multi-site infrastructure design 
     • Network security and segmentation 
@@ -148,25 +159,29 @@ Hands-on experience with:
     • Automation scripting 
     • Infrastructure monitoring 
     • Technical documentation 
-Roadmap
-Next Up
+    
+## Roadmap
+
+**Next Up**
     • Ansible for configuration management 
     • Reverse-proxy
     • Python automation 
     • Kubernetes cluster 
     • Centralized logging 
-Future
+    
+**Future**
     • Disaster recovery testing 
     • Monitoring alerting 
     • GitOps workflows 
     • Network automation 
 
-***Documentation***
+## Documentation
 Infrastructure docs maintained in local Bookstack:
     • Network diagrams 
     • Service dependencies 
     • Runbooks 
     • Troubleshooting guides 
     • Configuration templates 
-***Note***
+    
+## Note
 Personal learning environment. Security practices shown here are for educational purposes - evaluate against organizational policies before production use. In other words: don't do what I do just because you found it on the internet.
