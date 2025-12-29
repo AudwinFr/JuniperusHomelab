@@ -54,9 +54,7 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
     • System storage: 240GB Intel SSD
     • Storage: 3x 2TB WD drives in ZFS RAIDZ1 
     • Platform: Proxmox VE 
-    
-Running services:
-
+    *Running services:*
     • Home Assistant VM (home automation) 
     • Docker VM (containers) 
     • Cloudflare LXC (Zero Trust access) 
@@ -72,10 +70,8 @@ Running services:
     • CPU: AMD A10-9700E 
     • RAM: 16GB 
     • Storage: 480GB internal SSD 
-    • Platform: Proxmox VE 
-    
-Running services:
-
+    • Platform: Proxmox VE     
+    *Running services:*
     • Home Assistant VM (site redundancy) 
     • Docker VM (distributed services) 
 
