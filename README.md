@@ -37,8 +37,8 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 
 | VLAN | Purpose | Description |
 |------|---------|-------------|
-| Management | Infrastructure | Switches, APs, hypervisors |
-| Infrastructure | Core Services | DNS, auth, monitoring |
+| Management | Infrastructure | Switches, APs |
+| Infrastructure | Core Services | hypervisors, DNS, monitoring |
 | Trusted | Primary Devices | Workstations, phones, tablets |
 | IoT | Smart Home | Isolated IoT devices, TVs |
 | Security | Cameras | Security systems |
