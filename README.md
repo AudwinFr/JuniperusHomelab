@@ -44,6 +44,10 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 | Security | Cameras | Security systems |
 | Guest | Visitors | Internet-only access |
 
+### Overview
+
+![Homelab overview](https://github.com/AudwinFr/JuniperusHomelab/blob/main/juniperushomelab.drawio.png?raw=true)
+
 ### Compute
 
 **Primary Hypervisor: Tarkin**
