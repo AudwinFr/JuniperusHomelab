@@ -1,0 +1,44 @@
+# Sensitive Information
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets.yml
+secrets.yaml
+.env
+*.env
+
+# Passwords and tokens
+*password*
+*token*
+*secret*
+*credentials*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Logs
+*.log
+logs/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Real IP addresses and hostnames
+# Use example IPs (192.168.x.x) in committed configs
