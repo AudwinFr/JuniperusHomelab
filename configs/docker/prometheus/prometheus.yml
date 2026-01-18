@@ -1,0 +1,38 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # Add alerting rules here later
+
+scrape_configs:
+  # Prometheus monitoring itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Docker-host monitoring server
+  - job_name: 'docker-host'
+    static_configs:
+      - targets: ['node-exporter-docker-host:9100']
+
+  # Pi4 OMV server
+  - job_name: 'pi4-omv'
+    static_configs:
+      - targets: ['192.168.20.45:9100']
+    scrape_interval: 30s
+
+  # Proxmox host (Tarkin)
+  - job_name: 'tarkin-host'
+    static_configs:
+      - targets: ['192.168.20.10:9100']
+    scrape_interval: 30s
+
+  # Home Assistant
+  - job_name: 'home-assistant'
+    static_configs:
+      - targets: ['192.168.20.25:8123']
+    scrape_interval: 30s
+    metrics_path: '/api/prometheus'
+    authorization:
+      credentials: 'YOUR_LONG_LIVED_TOKEN_HERE'
