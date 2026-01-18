@@ -7,7 +7,7 @@ Zone-based network segmentation following defense-in-depth principles. Default-d
 ## VLAN Configuration
 
 | VLAN | Name | Subnet | Purpose | Description |
-|------|---------|-------------|
+|---|------|---------|-------------|-------------|
 | 1 | Management | 10.1.1.0/24 | Network infrastructure | Gateway, Switches, APs |
 | 20 | Infrastructure | 192.168.20.0/24 | Core Services | hypervisors, DNS, monitoring |
 | 30 | Trusted | 192.168.30.0/24 | Primary Devices | Workstations, phones, tablets |
