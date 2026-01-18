@@ -42,6 +42,7 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 | Trusted | Primary Devices | Workstations, phones, tablets |
 | IoT | Smart Home | Isolated IoT devices, TVs |
 | Security | Cameras | Security systems |
+| Tosche_Station | 3rdparty | Hosted services |
 | Guest | Visitors | Internet-only access |
 
 ### Overview
