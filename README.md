@@ -46,7 +46,7 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
 
 ### Overview
 
-![Homelab overview](https://github.com/AudwinFr/JuniperusHomelab/blob/main/juniperushomelab.drawio.png?raw=true)
+![Homelab overview](https://github.com/AudwinFr/JuniperusHomelab/blob/main/docs/juniperushomelab.jpg?raw=true)
 
 ### Compute
 
