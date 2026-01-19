@@ -26,12 +26,17 @@ Multi-site infrastructure lab for learning virtualization, networking, automatio
     • Thrawn
     • Piett
     
-**Remote Site: Lothal**
+**Remote Site 1: Lothal**
 
     • Connectivety: 100Mbps/100Mbps fiber
     • Gateway: UniFi Cloud Gateway Ultra 
     • Wireless: UniFi U6 Lite 
     • Ozzel
+
+**Remote Site 2: Tosche_Station**
+
+    • No devices
+    • Accesses recources on vlan83 at Juniperus location
     
 ### VLAN Design
 
