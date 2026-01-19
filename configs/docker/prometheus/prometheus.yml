@@ -14,7 +14,7 @@ scrape_configs:
   # Docker-host monitoring server
   - job_name: 'docker-host'
     static_configs:
-      - targets: ['node-exporter-docker-host:9100']
+      - targets: ['192.168.20.90:9100']
 
   # Pi4 OMV server
   - job_name: 'pi4-omv'
@@ -35,4 +35,5 @@ scrape_configs:
     scrape_interval: 30s
     metrics_path: '/api/prometheus'
     authorization:
-      credentials: 'YOUR_LONG_LIVED_TOKEN_HERE'
+      credentials: 'long_lived_token'
+'

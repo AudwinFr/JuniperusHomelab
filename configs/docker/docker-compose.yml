@@ -27,15 +27,15 @@ services:
     volumes:
       - ./data/grafana:/var/lib/grafana
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=your_secure_password_here
+      - GF_SECURITY_ADMIN_PASSWORD="password"
       - GF_USERS_ALLOW_SIGN_UP=false
-      - GF_SERVER_ROOT_URL=http://192.168.20.xx:3000
+      - GF_SERVER_ROOT_URL=http://192.168.20.90:3000
     networks:
       - monitoring
 
   node-exporter:
     image: prom/node-exporter:latest
-    container_name: node-exporter-pi3
+    container_name: node-exporter
     restart: unless-stopped
     ports:
       - "9100:9100"
