@@ -42,3 +42,5 @@ find "${BACKUP_ROOT}" -mindepth 1 -type d -mtime +7 -exec rm -rf {} \;
 echo "Old backups (older than 7 days) removed."
 
 echo "Backup completed successfully."
+
+#  *** This script is vibe-coded ***
